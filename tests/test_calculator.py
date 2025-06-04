@@ -9,10 +9,10 @@ class TestCalculadora(unittest.TestCase):
 
     def test_resta(self):
         self.assertEqual(resta(10, 5), 5)
-        self.assertEqual(.resta(0, 4), -4)
+        self.assertEqual(resta(0, 4), -4)
 
     def test_multiplicar(self):
-        self.assertEqual(.multiplicar(3, 4), 12)
+        self.assertEqual(multiplicar(3, 4), 12)
         self.assertEqual(multiplicar(-2, 3), -6)
 
     def test_dividir(self):

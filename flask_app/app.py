@@ -1,10 +1,4 @@
-from flask import Flask
+from flask_app import app
 
-app = Flask(__name__)
-
-@app.route('/saludo', methods=['GET'])
-def saludo():
-    return 'Hola, mundo'
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)

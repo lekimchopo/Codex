@@ -1,5 +1,6 @@
 # AI & Automation Lab
 
+[![Python tests](https://github.com/lekimchopo/Codex/actions/workflows/tests.yml/badge.svg)](https://github.com/lekimchopo/Codex/actions/workflows/tests.yml)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Status](https://img.shields.io/badge/status-active_lab-0e7490?style=flat-square)
 ![Dependencies](https://img.shields.io/badge/runtime_dependencies-none-16a34a?style=flat-square)
@@ -34,10 +35,13 @@ No third-party packages are required.
 python3 -m unittest discover -s tests -v
 ```
 
+The same suite runs automatically on Python 3.10, 3.11 and 3.12 through GitHub Actions.
+
 ## Repository structure
 
 ```text
 .
+├── .github/workflows/tests.yml
 ├── password_generator.py
 ├── tests/
 │   └── test_password_generator.py
@@ -58,11 +62,11 @@ python3 -m unittest discover -s tests -v
 
 - [x] Secure password generation with `secrets`.
 - [x] Input validation and automated unit tests.
+- [x] Continuous integration across supported Python versions.
 - [ ] Password-strength and entropy explanation utility.
 - [ ] Safe file-hash verification tool.
 - [ ] Structured-output examples for AI integrations.
 - [ ] Local-agent experiments with sanitized configuration examples.
-- [ ] Continuous integration for automated tests.
 
 ## Security note
 

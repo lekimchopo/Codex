@@ -1,6 +1,6 @@
 """Tests for the secure password generator."""
 
-import string
+import argparse
 import unittest
 
 from password_generator import CHARSET, generate_password, password_length
@@ -36,11 +36,11 @@ class PasswordLengthValidatorTests(unittest.TestCase):
         self.assertEqual(password_length("20"), 20)
 
     def test_rejects_short_cli_length(self) -> None:
-        with self.assertRaises(Exception):
+        with self.assertRaises(argparse.ArgumentTypeError):
             password_length("7")
 
     def test_rejects_non_numeric_cli_length(self) -> None:
-        with self.assertRaises(Exception):
+        with self.assertRaises(argparse.ArgumentTypeError):
             password_length("twenty")
 
 
